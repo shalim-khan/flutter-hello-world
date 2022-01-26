@@ -26,6 +26,7 @@ class MyWidget extends StatelessWidget {
               "images/rocket.gif",
               height: 100,
             ),
+            const SizedBox(height: 10),
             Text(
               displayText,
               style: GoogleFonts.lato(
