@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 var displayText = "Hello World";
-var displayColor = Colors.blue.shade700;
+var displayColor = Colors.black;
 
 void main() {
   runApp(
@@ -16,14 +17,24 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
-        child: Text(
-          displayText,
-          style: TextStyle(
-            color: displayColor,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "images/rocket.gif",
+              height: 100,
+            ),
+            Text(
+              displayText,
+              style: GoogleFonts.lato(
+                color: displayColor,
+                fontSize: 30,
+                // fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
       ),
     );
