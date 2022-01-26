@@ -1,4 +1,4 @@
-package com.example.flutter_hello_world
+package com.shalimkhan.flutter_hello_world
 
 import io.flutter.embedding.android.FlutterActivity
 
