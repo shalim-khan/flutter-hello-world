@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 var displayText = "Hello World";
-var displayColor = Colors.pink;
+var displayColor = Colors.blue.shade700;
 
 void main() {
   runApp(
