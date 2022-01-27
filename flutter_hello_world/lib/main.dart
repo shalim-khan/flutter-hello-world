@@ -10,7 +10,10 @@ void main() {
       home: MyWidget(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.cyan, // appears outside the safe area on mobile devices with crazy edges
+        primaryColor: Colors.cyan,
+        // appears outside the safe area
+        // on mobile devices with crazy edges
+        // when running inside a PWA
       ),
     ),
   );
