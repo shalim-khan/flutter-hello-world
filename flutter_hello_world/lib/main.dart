@@ -9,6 +9,10 @@ void main() {
     MaterialApp(
       home: MyWidget(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.pink,
+        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.purple),
+      ),
     ),
   );
 }
@@ -18,6 +22,10 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.navigation),
+        onPressed: () {},
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
