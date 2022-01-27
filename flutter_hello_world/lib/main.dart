@@ -2,19 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 var displayText = "Hello World";
-var displayColor = Colors.black;
 
 void main() {
   runApp(
-    MaterialApp(
+    CleanApp(
       home: MyWidget(),
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.cyan,
-        // appears outside the safe area
-        // on mobile devices with crazy edges
-        // when running inside a PWA
-      ),
     ),
   );
 }
@@ -23,25 +15,52 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "images/rocket.gif",
-              height: 100,
+            ClipRRect(
+              borderRadius: BorderRadius.all(Radius.circular(25)),
+              child: Image.asset(
+                "images/rocket.gif",
+                height: 150,
+              ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
             Text(
               displayText,
               style: GoogleFonts.lato(
-                color: displayColor,
                 fontSize: 30,
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CleanApp extends StatelessWidget {
+  final Widget home;
+
+  CleanApp({
+    required this.home,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: home,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.cyan,
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.cyan,
+        scaffoldBackgroundColor: Colors.blueGrey.shade900,
       ),
     );
   }
