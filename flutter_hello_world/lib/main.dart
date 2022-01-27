@@ -58,8 +58,8 @@ class CleanApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       darkTheme: ThemeData(
-        brightness: Brightness.light,
-        scaffoldBackgroundColor: Colors.white,
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.grey.shade900,
       ),
     );
   }
