@@ -23,7 +23,7 @@ class MyWidget extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(25)),
               child: Image.asset(
                 "images/rocket.gif",
-                height: 150,
+                height: 120,
               ),
             ),
             SizedBox(height: 20),
