@@ -10,8 +10,7 @@ void main() {
       home: MyWidget(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.pink,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.purple),
+        primaryColor: Colors.cyan, // appears outside the safe area on mobile devices with crazy edges
       ),
     ),
   );
@@ -22,10 +21,6 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.navigation),
-        onPressed: () {},
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,13 +29,12 @@ class MyWidget extends StatelessWidget {
               "images/rocket.gif",
               height: 100,
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: 10),
             Text(
               displayText,
               style: GoogleFonts.lato(
                 color: displayColor,
                 fontSize: 30,
-                // fontWeight: FontWeight.bold,
               ),
             ),
           ],
