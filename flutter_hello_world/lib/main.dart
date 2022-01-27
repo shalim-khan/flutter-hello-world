@@ -19,8 +19,14 @@ class MyWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(25)),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              padding: EdgeInsets.all(10.0),
               child: Image.asset(
                 "images/rocket.gif",
                 height: 120,
