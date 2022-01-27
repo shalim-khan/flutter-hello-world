@@ -60,7 +60,7 @@ class CleanApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.purple, // iOS PWA status bar background color for light AND dark modes
+        primaryColor: Colors.cyan, // iOS PWA status bar background color for light AND dark modes
         scaffoldBackgroundColor: Colors.white,
       ),
       darkTheme: ThemeData(
