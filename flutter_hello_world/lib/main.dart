@@ -6,12 +6,12 @@ var displayText = "Hello World";
 void main() {
   runApp(
     CleanApp(
-      home: MyWidget(),
+      home: HomePage(),
     ),
   );
 }
 
-class MyWidget extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,19 +19,7 @@ class MyWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.white,
-                  ),
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(20))),
-              padding: EdgeInsets.all(10.0),
-              child: Image.asset(
-                "images/rocket.gif",
-                height: 120,
-              ),
-            ),
+            AnimatedRocketShip(),
             SizedBox(height: 20),
             Text(
               displayText,
@@ -41,6 +29,25 @@ class MyWidget extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class AnimatedRocketShip extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.white,
+          ),
+          color: Colors.white,
+          borderRadius: BorderRadius.all(Radius.circular(20))),
+      padding: EdgeInsets.all(10.0),
+      child: Image.asset(
+        "images/rocket.gif",
+        height: 120,
       ),
     );
   }
@@ -60,7 +67,8 @@ class CleanApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.cyan, // iOS PWA status bar background color for light AND dark modes
+        primaryColor: Colors
+            .cyan, // iOS PWA status bar background color for light AND dark modes
         scaffoldBackgroundColor: Colors.white,
       ),
       darkTheme: ThemeData(
