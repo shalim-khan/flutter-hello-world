@@ -5,7 +5,7 @@ Platforms:
 - iOS
 - Android
 - macOS
-- web (including PWA)
+- web (including mobile PWA)
 
 Includes:
 - Dark Mode
