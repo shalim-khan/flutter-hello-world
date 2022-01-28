@@ -1,7 +1,7 @@
 # flutter-hello-world
 Starting point for Flutter apps.
 
-https://user-images.githubusercontent.com/62805858/151586106-ec34a966-d8e4-4b48-af97-267440e404a5.mov
+<img width="400" alt="Screenshot 2022-01-28 at 16 39 36" src="https://user-images.githubusercontent.com/62805858/151586445-61f4ff86-86d4-488f-9063-1568118dfc67.png">
 
 Platforms:
 - iOS
