@@ -1,7 +1,7 @@
 # flutter-hello-world
 Starting point for Flutter apps.
 
-<img width="400" alt="Screenshot 2022-01-28 at 16 39 36" src="https://user-images.githubusercontent.com/62805858/151586445-61f4ff86-86d4-488f-9063-1568118dfc67.png">
+<img width="1050" alt="Screenshot 2022-01-30 at 17 47 09" src="https://user-images.githubusercontent.com/62805858/151711214-3f46318f-2732-49b8-9ad9-8f56740fb2d4.png">
 
 ## Platforms
 - iOS
@@ -10,6 +10,7 @@ Starting point for Flutter apps.
 - web (including mobile PWA)
 
 ## Includes
+- Animated GIF
 - Dark Mode
 - Google Fonts
 - Custom app icons for all supported platforms
