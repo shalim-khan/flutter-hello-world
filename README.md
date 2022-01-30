@@ -9,7 +9,7 @@ Starting point for Flutter apps.
 - macOS
 - web (including mobile PWA)
 
-## Includes
+## Features
 - Animated GIF
 - Dark Mode
 - Google Fonts
